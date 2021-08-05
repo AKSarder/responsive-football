@@ -1,0 +1,288 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* default css  */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+
+
+
+/* banner area css start  */
+
+.banner-area{
+
+    background: purple;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto ; 
+    /* margin: 70px 0; */
+}
+.banner{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.section-title {
+    width: 485px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.btn-link{
+    background: #E02C6D;
+    width: 88px;
+    /* height: 24px; */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 24px;
+    margin-top: 27px;
+    padding: 10px 24px;
+    color:#FFFFFF ;
+    border-radius: 10px;
+
+}
+.btn-link span{
+    margin-left: 8px;
+}
+.banner-img{
+    margin-left: 102px;
+    width: 556.01px;
+    /* height: 438px; */
+
+}
+.banner-img img{
+    width: 100%;
+}
+
+/* players info gallary  */
+.players-info{
+    margin: 70px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+.player{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 27px;
+    
+}
+.player img{
+   width: 100%;
+   /* margin: 16px 0; */
+}
+.player-name{
+    font-size: 28px;
+    font-weight: bold;
+    color: #18191F;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+     border: 0;
+    
+}
+.player p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+
+/* heightlight css area  */
+
+
+.heighlight{
+    display: flex;
+    align-items: center;
+}
+.heighlight-info{
+    /* width: 50%; */
+    width: 466px;
+}
+.heighlight-title {
+    /* width: 485px; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px;
+    color: #000;
+}
+.heighlight-info p {
+    font-size: 18px;
+    color: #444;
+    margin: 30px 0;
+}
+.heightlight-img{
+    /* width: 50%; */
+    width: 567px;
+    margin-left: 80px;
+}
+.heightlight-img img{
+    width: 100%;
+}
+
+/* footer area css start  */
+.footer-aera{
+
+    margin-top: 100px;
+}
+.footer-img{
+    text-align: center;
+ 
+}
+
+.social-icon{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-icon a{
+    text-decoration: none;
+}
+span.icon {
+    margin: 0 7px;
+    background: #969BAB;
+    padding: 15px;
+    border-radius: 50%;
+    line-height: 18px;
+}
+span.icon i {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+}
+.footer-aera p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 67px;
+}
+
+
+
+/* Mobile device media query css  */
+@media only  screen and (min-width:320px) and (max-width: 768px) {
+
+  
+    .container{
+        width: 100%;
+    }
+    
+    .banner{
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        align-items: start;
+    }
+    .banner-info {
+        margin: 112px 66px 16px 15px;
+    }
+    .section-title{
+        font-size: 36px;
+    }
+    
+    .banner-img {
+        width: 100%;
+        padding: 50px 16px 15px 16px;
+        margin: 0;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    /* players info gallary  */
+    .players-info{
+        margin: 62px;
+    }
+   .players{
+       flex-direction: column;
+       grid-template-columns: repeat(1,1fr);
+   }
+   .player{
+       width: 100%;
+       margin-bottom: 24px;
+   }
+   .player img{
+       width: 100%;
+   }
+
+   /* heightlight css area  */
+
+.heighlight{
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.heighlight-info {
+    /* width: 50%; */
+    /* width: 466px; */
+    width: 100%;
+    /* margin: 60px 15px 68px 15px; */
+}
+.heighlight-title {
+    margin: 15px;
+    font-size: 30px;
+
+}
+.btn-link{
+    margin-left: 15px;
+}
+.heighlight-info p {
+    font-size: 16px;
+    margin-left: 15px;
+}
+.heightlight-img{
+    width: 100%;
+    margin:  29px 16px 55px 16px;
+    /* margin: 0 */
+}
+.heightlight-img img{
+    width: 100%;
+   
+  
+  
+}
+
+/* footer area css start  */
+.footer-aera{
+
+    margin-top: 0;
+}
+.footer-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer-img img{
+   width: 100%;
+}
+.social-icon{
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.footer-aera p{
+     /* text-align: center; */
+    /* font-size: 18px; */
+    margin-bottom: 187px; 
+}
+
+
+
+   
+}
